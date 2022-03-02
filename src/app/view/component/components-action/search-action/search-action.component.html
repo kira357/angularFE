@@ -1,0 +1,14 @@
+<div class="header">
+  <section>
+    <mat-label class="p-2">Select year</mat-label>
+    <select class="fs-4 rounded" (change)="selectChangeYear($event)">
+      <option
+      *ngFor="let item of listOfYear"
+      [selected]="item === currentYear"
+      [value]="item"
+      >
+        {{ item }}
+      </option>
+    </select>
+  </section>
+</div>
